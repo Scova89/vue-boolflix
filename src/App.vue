@@ -32,7 +32,7 @@ export default {
         }
       })
       .then((response) => {
-        this.films=response;
+        this.films=response.data.results;
       })
       .catch((error) => {
         console.log(error)

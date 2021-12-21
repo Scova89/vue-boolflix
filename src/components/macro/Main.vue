@@ -1,10 +1,18 @@
 <template>
-    <main></main>
+    <main>
+        <FilmList/>
+    </main>
 </template>
 
 <script>
+import FilmList from '../sections/FilmList.vue';
+import axios from 'axios';
+
 export default {
-    name: 'Main'
+    name: 'Main',
+    components: {
+      FilmList
+  }
 }
 </script>
 

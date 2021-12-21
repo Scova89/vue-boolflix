@@ -12,6 +12,9 @@ export default {
     name: 'Main',
     components: {
       FilmList
+  },
+  props: {
+      films: Array
   }
 }
 </script>

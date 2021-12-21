@@ -2,7 +2,7 @@
     <header>
         <div class="search-bar">
             <input v-model="textToSearch" type="text">
-            <button @click.prevent="$emit(search, textToSearch)">Search</button>
+            <button @click.prevent="$emit('search', textToSearch)">Search</button>
         </div>
     </header>
 </template>

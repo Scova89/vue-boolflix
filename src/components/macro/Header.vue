@@ -1,8 +1,11 @@
 <template>
     <header>
-        <div class="search-bar">
-            <input v-model="textToSearch" type="text">
-            <button @click.prevent="$emit('search', textToSearch)">Search</button>
+        <div class="search-bar" @submit.prevent="$emit('search', textToSearch)">
+            <form action="">
+                <input v-model="textToSearch" type="text">
+                <button>Search</button>
+            </form>
+            
         </div>
     </header>
 </template>

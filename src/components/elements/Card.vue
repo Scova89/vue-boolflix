@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>{{info.title}}</h3>
+        <h3>{{info.title ? info.title : info.name}}</h3>
         <h4>{{info.original_title}}</h4>
         <div>
             <img v-if="flags.includes(info.original_language)" :src="require(`../../assets/flags/${info.original_language}.png`)" :alt="info.original_language" height="30">
